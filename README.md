@@ -10,7 +10,7 @@ The user inputs specific city in the input box then clicks the search button. Th
 
 ## Mock-up
 
-![The application has a grey search button](./assets/images/WeatherMock.jpg)
+![The application has a grey search button](./assets/images/WeatherMock.JPG)
 
 ## Installation
 
