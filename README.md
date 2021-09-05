@@ -6,7 +6,7 @@ A locally stored weather dashboard with dynamically updatd HTML and CSS.
 
 ## Acceptance Criteria
 
-The user inputs specific city in the input box then clicks the search button. The search results will pull up the today's current weather, as well as a 5 day forecast.
+The user inputs specific city in the provided field then clicks the search button. The search results will pull up the today's current weather, as well as a 5 day forecast.
 
 ## Mock-up
 
