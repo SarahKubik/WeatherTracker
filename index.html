@@ -1,25 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="stylesheet" href= ".\assets\css\style.css"/>
-    <script src=".\assets\js\script.js"></script>
     <title>Weather Tracker</title>
-    
-    
-  
+    <link rel="stylesheet" href= ".\assets\css\style.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <form>
-        <input type = "text" id = "search" placeholder = "search by location" aria-label="searchbox">
-        <button></button>
-    </form>
-<div class = "weather">
-    <h2 class="city"></h2>
-    
-</div>
-    
+
+    <body>
+        <header>
+            <h1> Weather Tracker</h1>
+        </header>
+        <main class="container-fluid">
+            <div class = "row">
+                <!-- <div class="col-12 col-md-3 p-2 search-column"> -->
+                    <form class = "border p-2" id = "city-search-form">
+                        <h4>Search for a Location</h2>
+                        <input id="city" type = "text" autofocus = "true" class = "form-input" aria-label="searchbox"/>
+                        <button class = "btn btn-primary" type = "submit">Search</button>
+                    </form>
+                    <div class = "past-search border" id = "past-search-buttons"></div>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class = "row border selected-city" id = "current-forecast">
+                        <div class = "col-12">
+                            <h2 id="searched-city"></h2>
+                            <div id = "current-weather-container" class = "list-group">
+
+                            </div>
+                        </div>  
+                    </div>
+                    <div class = "row border" id = "five-day-forecast">
+                            <h2 class= "col-12" id = "forecast"></h2>
+                            <div class = "d-flex" id = "fiveday-container"></div>
+                    </div>  
+                </div>
+            </div>
+        </main>
+   
+        <!-- JS and Jquery scripts -->
+    <script src=".\assets\js\script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  
 </body>
+
 </html>
